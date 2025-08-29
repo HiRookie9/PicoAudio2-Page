@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Test Demo Page</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 40px;}
-    .container { background: #fff; padding: 36px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);}
-    h1 { color: #3282ff; }
-    p { color: #444; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PicoAudio2: A lightweight JavaScript MIDI synthesizer & player.">
+  <meta name="keywords" content="PicoAudio2, MIDI, JavaScript, Synthesizer, Audio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PicoAudio2: JavaScript MIDI Synth Demo</title>
+  
+  <!-- 可选: 引入Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-ID"></script> -->
+  <!-- <script> ... </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>This is a test demo page</h1>
-    <p>If you see this page, your demo is working!</p>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://github.com/HiRookie9/PicoAudio2">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      PicoAudio2
+    </a>
   </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Projects
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/HiRookie9/PicoAudio2-Page">
+            PicoAudio2-Page
+          </a>
+          <a class="navbar-item" href="https://hirookie9.github.io/pico.github.io/">
+            Pico.github.io
+          </a>
+          <!-- 可以添加你其他相关项目 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- 这里可以加你的正文内容，例如demo播放器介绍等 -->
+
 </body>
 </html>
