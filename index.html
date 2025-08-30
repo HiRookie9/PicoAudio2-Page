@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PicoAudio2: A lightweight JavaScript MIDI synthesizer & player.">
-  <meta name="keywords" content="PicoAudio2, MIDI, JavaScript, Synthesizer, Audio">
+        content="PicoAudio2">
+  <meta name="keywords" content="PicoAudio2, Audio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PicoAudio2: JavaScript MIDI Synth Demo</title>
   <style>
@@ -42,7 +42,7 @@
     }
     .intro-image-block {
       width: 100%;
-      max-width: 400px;
+      max-width: 1000px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -57,7 +57,7 @@
     .intro-image {
       width: 100%;
       height: auto;
-      max-width: 320px;
+      max-width: 640px;
       border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
       margin-bottom: 8px;
@@ -103,18 +103,27 @@
       </h1>
       <div class="is-size-5 publication-authors">
         <span class="author-block">
-          <a href="#">ihao Zheng</a><sup>1,2</sup>,</span>
+          <a href="#">Zihao Zheng†</a><sup>1,2</sup>,</span>
         <span class="author-block">
           <a href="#">Zeyu Xie</a><sup>1,2</sup>,</span>
         <span class="author-block">
           <a href="#">Xuenan Xu</a><sup>1,2</sup>,</span>
         <span class="author-block">
-          <a href="#">Mengyue Wu</a><sup>1,2</sup>
+          <a href="#">Wem Wu</a><sup>1,2</sup>,</span>
+        <span class="author-block">
+          <a href="#">Chao Zhang</a><sup>1,2</sup>,</span>
+        <span class="author-block">
+          <a href="#">Mengyue Wu*</a><sup>1,2</sup>
         </span>
       </div>
       <div class="is-size-5 publication-authors">
-        <span class="author-block"><sup>1</sup>X-LANCE Lab</span>
-        <span class="author-block"><sup>2</sup>MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University</span>
+        <span class="author-block"><sup>1</sup>MoE Key Lab of Artiffcial Intelligence, AI Institute, X-LANCE Lab, Shanghai Jiao Tong University
+        </span>
+        <span class="author-block"><sup>2</sup>Shanghai AI Lab</span>
+      </div>
+      <div class="is-size-6" style="margin-top:6px;">
+        <em>†This work was done while Z. Zheng was an intern at Shanghai AI lab.</em><br>
+        <em>*Corresponding author: Mengyue Wu (mengyue.wu@example.com)</em>
       </div>
       <div class="publication-links" style="margin-top:10px;">
         <span class="link-block">
@@ -155,9 +164,9 @@
     <div class="table-intro">
       <div class="intro-label">Data &amp; Model</div>
       <div class="intro-image-block">
-        <div class="intro-image-title">数据 Data</div>
+        <div class="intro-image-title">Data</div>
         <img src="./static/photo/data.png" alt="数据示例" class="intro-image">
-        <div class="intro-image-title model-title">模型 Model</div>
+        <div class="intro-image-title model-title">Model</div>
         <img src="./static/photo/model.png" alt="模型结构" class="intro-image">
       </div>
     </div>
