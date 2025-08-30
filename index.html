@@ -26,6 +26,46 @@
       height: 20px;
       min-height: 20px;
     }
+    .table-intro {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .intro-label {
+      font-weight: 500;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .intro-image-block {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .intro-image-title {
+      font-size: 0.98em;
+      color: #666;
+      margin-bottom: 4px;
+      margin-top: 10px;
+    }
+    .intro-image {
+      width: 100%;
+      height: auto;
+      max-width: 320px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 8px;
+      background: #f8f8f8;
+    }
+    .model-title {
+      margin-top: 18px;
+    }
   </style>
   <!-- 可选: 引入Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-ID"></script> -->
@@ -52,25 +92,6 @@
       PicoAudio2
     </a>
   </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Projects
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/HiRookie9/PicoAudio2-Page">
-            PicoAudio2-Page
-          </a>
-          <a class="navbar-item" href="https://hirookie9.github.io/pico.github.io/">
-            Pico.github.io
-          </a>
-          <!-- 可以添加你其他相关项目 -->
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
   
 <section class="hero">
   <div class="hero-body">
@@ -139,13 +160,14 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Text-to-Audio Generation Comparison</h2>
-    <div class="table-intro" style="text-align:center; margin-bottom:18px;">
-      <div style="font-weight:500; font-size:1.1em; margin-bottom:6px;">
-        data &amp; model
-      </div>
-      <div style="display:inline-flex; gap:12px;">
-        <img src="./static/photo/data.png" alt="数据示例" style="width:48px; height:48px;">
-        <img src="./static/photo/model.png" alt="模型结构" style="width:48px; height:48px;">
+    <!-- 修改后的说明和图片：上下排列，整体居中，宽度自适应 -->
+    <div class="table-intro">
+      <div class="intro-label">Data &amp; Model</div>
+      <div class="intro-image-block">
+        <div class="intro-image-title">数据 Data</div>
+        <img src="./static/photo/data.png" alt="数据示例" class="intro-image">
+        <div class="intro-image-title model-title">模型 Model</div>
+        <img src="./static/photo/model.png" alt="模型结构" class="intro-image">
       </div>
     </div>
 
