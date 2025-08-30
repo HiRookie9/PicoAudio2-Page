@@ -159,16 +159,20 @@
 </section>
 <section class="section">
   <div class="container is-max-desktop">
+    <div style="max-width: 900px; margin: 0 auto 24px auto; font-size: 1.08em; color: #444;">
+      PicoAudio2 improves temporal-controllable TTA via a new data processing pipeline and model architecture. Speciffcally, we use a grounding model to annotate event timestamps of real audio-text datasets to curate temporally-strong real data, in addition to simulation data from existing works. The model is trained on the combination of real and simulation data. Moreover, following PicoAudio, we encode timestamp information into a timestamp matrix to provide extra fine-grained time-aligned information to the model, on top of the coarse-grained textual description.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="table-intro">
-      <div class="intro-label">Data &amp; Model</div>
+      <h2 class="title is-3 has-text-centered">Data Pipeline &amp; Model</h2>
       <div class="intro-image-block">
-        <div class="intro-image-title">Data</div>
         <!-- 可添加介绍文字 -->
-        <div class="intro-image-desc">数据示例：用于训练的数据，包含文本和音频信息。</div>
         <img src="./static/photo/data.png" alt="数据示例" class="intro-image">
-        <div class="intro-image-title model-title">Model</div>
         <!-- 可添加介绍文字 -->
-        <div class="intro-image-desc">模型结构：展示了文本到音频的转换流程和整体架构。</div>
         <img src="./static/photo/model.png" alt="模型结构" class="intro-image">
       </div>
     </div>
