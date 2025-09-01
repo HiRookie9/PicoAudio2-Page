@@ -39,10 +39,14 @@
     flex-direction: column;
     align-items: center;
     }
-    .table td img:hover {
-    transform: scale(3.0);
+    .table td img {
+    position: relative;
+    z-index: 1;
     transition: transform 0.18s ease;
-    z-index: 3;
+    }
+    .table td img:hover {
+    z-index: 99;
+    transform: scale(3.0);
     }
     .intro-label {
       font-weight: 500;
@@ -196,8 +200,8 @@
         <!-- 第一组 -->
         <tr>
           <td colspan="5" style="height: 30px; vertical-align: middle;">
-            <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-              <strong>An engine rumbles loudly at 0.2-3.9s and an air horn honks at 4.7-5.5s, 6.5-6.8s.</strong>
+            <div style="height: 100%; display: flex; align-items: center; justify-content: flex-start;">
+              <strong>Text prompt: An engine rumbles loudly at 0.2-3.9s and an air horn honks at 4.7-5.5s, 6.5-6.8s.</strong>
             </div>
           </td>
         </tr>
@@ -241,8 +245,8 @@
         <!-- 第二组 -->
         <tr>
           <td colspan="5" style="height: 30px; vertical-align: middle;">
-            <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-              <strong>A bell is ringing loudly and quickly at 0.0-3.2s.</strong>
+            <div style="height: 100%; display: flex; align-items: center; justify-content: flex-start;">
+              <strong>Text prompt: A bell is ringing loudly and quickly at 0.0-3.2s.</strong>
             </div>              
           </td>
         </tr>
@@ -286,8 +290,8 @@
         <!-- 第三组 -->
         <tr>
           <td colspan="5" style="height: 30px; vertical-align: middle;">
-            <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-              <strong>Loud wind noise at 0.2-2.0s and a car accelerating fast at 2.0-9.9s.</strong>
+            <div style="height: 100%; display: flex; align-items: center; justify-content: flex-start;">
+              <strong>Text prompt: Loud wind noise at 0.2-2.0s and a car accelerating fast at 2.0-9.9s.</strong>
             </div>    
           </td>
         </tr>
@@ -331,8 +335,8 @@
         <!-- 第四组 -->
         <tr>
           <td colspan="5" style="height: 30px; vertical-align: middle;">
-            <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-              <strong>A quick loud explosion at 0.1-0.8s and music plays with pulsating sounds at 1.1-5.8s and a man talking at 6.8-9.6s.</strong>
+            <div style="height: 100%; display: flex; align-items: center; justify-content: flex-start;">
+              <strong>Text prompt: A quick loud explosion at 0.1-0.8s and music plays with pulsating sounds at 1.1-5.8s and a man talking at 6.8-9.6s.</strong>
             </div>
           </td>
         </tr>
@@ -376,8 +380,8 @@
         <!-- 第五组 -->
         <tr>
           <td colspan="5" style="height: 30px; vertical-align: middle;">
-            <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-              <strong>Tap water is running at 1.0-7.6s and a tapping noise at 0.5-0.6s, 9.0-9.4s.</strong>
+            <div style="height: 100%; display: flex; align-items: center; justify-content: flex-start;">
+              <strong>Text prompt: Tap water is running at 1.0-7.6s and a tapping noise at 0.5-0.6s, 9.0-9.4s.</strong>
             </div> 
           </td>
         </tr>
